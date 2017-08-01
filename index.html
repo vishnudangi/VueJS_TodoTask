@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+ <div id="root">
+   <h1>{{message}}</h1>
+   <ul>
+    <li v-for="(todo, index) in todos">
+     <span>{{todo}}</span>
+      <input type="button" value="Edit" v-on:click="editTask(index)">
+      <input type="button" value="Delete" v-on:click="deleteTask(index)">
+     </li> 
+   </ul>
+   <input type="text" v-model="inputTask" placeholder="please enter task">
+   <input type="button" value="add task" v-on:click="addTask()">
+ </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
