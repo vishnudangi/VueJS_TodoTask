@@ -1,7 +1,7 @@
 var app = new Vue({
   el: '#root',
   data : {
-   message : "to do App",
+   message : "To Do Task",
     todos: [],
     inputTask: '',
     isEditTask : false,
